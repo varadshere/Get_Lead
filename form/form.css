@@ -8,9 +8,14 @@ nav{
     /*background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,#404040 100%); !* W3C *!*/
 }
 
+input[type="text"], input[type="email"],
+input[type="password"], input[type="number"]{
+    font-size: 22px;
+    padding-left: 20px;
+}
 
 .form-control{
-    height: 60px !important;
+    height: 57px !important;
 }
 .form-group{
     padding-bottom: 15px;
@@ -60,11 +65,12 @@ section{
     margin-bottom: 20px;
     height: 200px;
     width: 200px;
-    background-color: #84d08f;
+    background-color: #379683;
     /*display: block;*/
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 25px;
 }
 
 .icon-customs{

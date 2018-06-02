@@ -169,6 +169,7 @@ $( document ).ready( function () {
                 "cube": getCubeVal(),
                 "company_name": $('#cname').val(),
                 "first_name": $('#fname').val(),
+                "password": $('#password').val(),
                 "last_name": $('#lname').val(),
                 "email": $('#email').val(),
                 "phone": $('#phnumnber').val(),
@@ -219,5 +220,6 @@ $( document ).ready( function () {
                 console.log($(this).children().children().last().text());
             }
         });
+        return $(this).children().children().last().text()
     }
 });
