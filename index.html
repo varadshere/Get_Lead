@@ -6,6 +6,9 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="index.js"></script>
 
     <!--CSS-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -15,9 +18,10 @@
     <title>Get Lead</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: #dfe1ed66; ">
         <!--<a class="navbar-brand" href="#">Navbar</a>-->
-        <img src="imgs/logo.png">
+        <img src="imgs/payroll_logo.png">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,81 +35,199 @@
                     <a class="nav-link" href="#">Contact Us</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                        <!--Dropdown-->
-                    <!--</a>-->
-                    <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-                        <!--<a class="dropdown-item" href="#">Action</a>-->
-                        <!--<a class="dropdown-item" href="#">Another action</a>-->
-                        <!--<div class="dropdown-divider"></div>-->
-                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
-                    <!--</div>-->
-                <!--</li>-->
-                <!--<li class="nav-item">-->
-                    <!--<a class="nav-link disabled" href="#">Disabled</a>-->
-                <!--</li>-->
             </ul>
-            <!--<form class="form-inline my-2 my-lg-0">-->
-                <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-            <!--</form>-->
         </div>
     </nav>
-    <div class="container">
-        <div style="padding-top: 10px">
-            <form>
-                <div class="form-group">
-                    <label for="cname">Company Name</label>
-                    <input type="text" class="form-control" id="cname" aria-describedby="emailHelp" placeholder="Company Name">
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <label for="fname">First Name</label>
-                            <input type="text" class="form-control" id="fname" aria-describedby="emailHelp" placeholder="First Name">
+    <div class="conitainer-parent">
+        <div class="container container-custom">
+            <div style="padding-top: 10px">
+                <form  id="signupForm">
+                    <div class="form-group">
+                        <!--<label for="cname">Company Name</label>-->
+                        <div class="ip-validation">
+                            <input type="text" class="form-control" id="cname" name="cname" aria-describedby="emailHelp" placeholder="Company Name">
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <label for="lname">Last Name</label>
-                            <input type="text" class="form-control" id="lname" aria-describedby="emailHelp" placeholder="Last Name">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <!--<label for="fname">First Name</label>-->
+                                <div class="ip-validation">
+                                    <input type="text" class="form-control" id="fname" name="first_name" aria-describedby="emailHelp" placeholder="First Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <!--<label for="lname">Last Name</label>-->
+                                <div class="ip-validation">
+                                    <input type="text" class="form-control" id="lname" name="lname" aria-describedby="emailHelp" placeholder="Last Name">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <!--<label for="email">Email address</label>-->
+                                <div class="ip-validation">
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <!--<label for="phnumnber">Phone Number</label>-->
+                                <div class="ip-validation">
+                                    <input type="text" class="form-control" id="phnumnber" name="phnumnber" placeholder="Phone Number">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <label for="phnumnber">Phone Number</label>
-                            <input type="text" class="form-control" id="phnumnber" placeholder="Phone Number">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <!--<label for="empcount">Employee Count</label>-->
+                                <div class="ip-validation">
+                                    <input type="number" class="form-control" id="empcount" aria-describedby="emailHelp" placeholder="Employee Count">
+                                </div>
+                                <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <!--<label for="payfreq">Pay Frequency</label>-->
+                                <div class="ip-validation">
+                                    <select class="form-control" id="payfreq">
+                                        <option>Pay Frequency</option>
+                                        <option>Weekly</option>
+                                        <option>Bi-Weekly</option>
+                                        <option>Semi Monthly</option>
+                                        <option>Monthly</option>
+                                    </select>
+                                    <!--<input type="text" class="form-control" id="payfreq" placeholder="Pay Frequency">-->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="payroll">Current Payroll Provider</label>
-                    <input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">
-                </div>
-                <!--<div class="form-check">-->
-                <!--<input type="checkbox" class="form-check-input" id="exampleCheck1">-->
-                <!--<label class="form-check-label" for="exampleCheck1">Check me out</label>-->
-                <!--</div>-->
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 text-center" style="padding-bottom: 20px;">
-                        <button type="submit" class="btn btn-primary sbutton">Tell us a bit more?</button>
+                    <div class="form-group">
+                        <!--<label for="payroll">Current Payroll Provider</label>-->
+                        <div class="ip-validation">
+                            <select class="form-control" id="payroll">
+                            </select>
+                            <!--<input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">-->
+                        </div>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 text-center">
-                        <button type="submit" class="btn btn-primary sbutton">Finish</button>
+                    <div class="form-group">
+                        <div class="row align-items-center">
+                            <div class="col-xs-10 col-sm-10 col-md-10">
+                                <label for="payrollprovider">Are you satisfied with your current Payroll service and their pricing?</label>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 text-right">
+                                <span id="payrollprovider-lable" for="payrollprovider">No</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="payrollprovider">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <!--<input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">-->
+                        </div>
                     </div>
-                </div>
-            </form>
-        </div>
+                    <div class="form-group" id="newsolution-group">
+                        <!--<label for="newsolution">When would you like to start looking for new solution?</label>-->
+                        <div class="ip-validation">
+                            <select class="form-control" id="newsolution">
+                                <option>When would you like to start looking for new solution?</option>
+                                <option>Now</option>
+                                <option>30 days</option>
+                                <option>60 days</option>
+                                <option>90 days</option>
+                                <option>6 months+</option>
+                            </select>
+                            <!--<input type="text" class="form-control" id="newsolution" placeholder="Now, 30 days, 60 days, 90 days, 6 months+">-->
+                        </div>
+                    </div>
+                    <div id="tell-us-bit">
+                        <div class="form-group">
+                            <div class="row align-items-center">
+                                <div class="col-xs-8 col-sm-8 col-md-8">
+                                    <label for="hremp">Do you have any hourly employees?</label>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-4 text-right">
+                                    <span id="hremp-lable" for="hremp">No</span>
+                                    <label class="switch">
+                                        <input type="checkbox" id="hremp">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <!--<input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">-->
+                            </div>
+                        </div>
+                        <div class="form-group" id="track-time-group">
+                            <label for="track-time">How do you track their time?</label>
+                            <div class="ip-validation">
+                                <select class="form-control" id="track-time">
+                                    <option>Paper Time Cards</option>
+                                    <option>Excel</option>
+                                    <option>Physical Time Clocks</option>
+                                </select>
+                                <!--<input type="text" class="form-control" id="track-time" placeholder="">-->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row align-items-center">
+                                <div class="col-xs-8 col-sm-8 col-md-8">
+                                    <label for="healthins">Do you offer health insurance to your employees?</label>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-4 text-right">
+                                    <span id="healthins-lable" for="healthins">No</span>
+                                    <label class="switch">
+                                        <input type="checkbox" id="healthins">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" id="empnum-group">
+                            <label for="empnum">How many employees do you have on the plan?</label>
+                            <input type="text" class="form-control" id="empnum" placeholder="How Many">
+                        </div>
+                        <div class="form-group">
+                            <!--<label for="monthlyspend">What is your monthly spend?</label>-->
+                            <input type="text" class="form-control" id="monthlyspend" placeholder="What is your monthly spend?">
+                        </div>
 
+                        <div class="form-group">
+                            <div class="row align-items-center">
+                                <div class="col-xs-10 col-sm-10 col-md-10">
+                                    <label for="interested">Would you be interested in speaking with PayrollMart Benefits Advisor about ways to save money and time on your benefits costs / administration?</label>
+                                </div>
+                                <div class="col-xs-2 col-sm-2 col-md-2 text-right">
+                                    <span id="interested-lable" for="interested">No</span>
+                                    <label class="switch">
+                                        <input type="checkbox" id="interested">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <!--<input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">-->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row" style="padding-top: 20px; padding-bottom: 10px;">
+                        <div class="col-xs-6 col-sm-6 col-md-6 text-center">
+                            <button id="tell-us-bit-button" type="button" class="btn btn-outline-success sbutton">Tell us a bit more?</button>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 text-center">
+                            <button type="submit" name="signupForm" class="btn btn-outline-success sbutton">Finish</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
     </div>
 
 </body>

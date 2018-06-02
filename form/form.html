@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <!--JS-->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="form.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Lead</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding-bottom: 25px;">
+        <img src="../imgs/payroll_logo.png">
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+            <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+
+        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+            <!--<ul class="navbar-nav mr-auto">-->
+                <!--<li class="nav-item active">-->
+                    <!--<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Contact Us</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item dropdown">-->
+            <!--</ul>-->
+        <!--</div>-->
+    </nav>
+    <div class="wrapper">
+        <!--<div class="cart-img">-->
+            <!--<img src=../imgs/cart.png>-->
+        <!--</div>-->
+        <div class="wrapper-inner">
+            <div class="container container-custom">
+
+                <section id="section1" style="padding-top: 10px;">
+                    <div class="row section1-cubes">
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="cube">
+                                <div>
+                                    <i class="fas fa-check-circle uncheck-icon"></i>
+                                    <div class="fas fa-money-bill icon-customs"></div>
+                                    <div>Payroll</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="cube">
+                                <div>
+                                    <i class="fas fa-check-circle uncheck-icon"></i>
+                                    <div class="fas fas fa-calendar-alt icon-customs"></div>
+                                    <div>Payroll Time Keeping</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="cube">
+                                <div>
+                                    <i class="fas fa-check-circle uncheck-icon"></i>
+                                    <div class="far fa-life-ring icon-customs"></div>
+                                    <div> Payroll
+                                        Time Keeping
+                                        HR Support</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="cube">
+                                <div>
+                                    <i class="fas fa-check-circle uncheck-icon"></i>
+                                    <div class="fas fa-money-bill icon-customs"></div>
+                                    <div>
+                                        Payroll
+                                        Time Keeping
+                                        HR Support
+                                        Benefits
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section2">
+                    <form  id="signupForm1">
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="fname">First Name</label>-->
+                                    <div class="ip-validation">
+                                        <input type="text" class="form-control" id="fname" name="fname" aria-describedby="emailHelp" placeholder="First Name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="lname">Last Name</label>-->
+                                    <div class="ip-validation">
+                                        <input type="text" class="form-control" id="lname" name="lname" aria-describedby="emailHelp" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="lname">Last Name</label>-->
+                                    <div class="ip-validation">
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="lname">Last Name</label>-->
+                                    <div class="ip-validation">
+                                        <input type="password" class="form-control" id="password" name="password" aria-describedby="password" placeholder="Create Password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="ip-validation">
+                                        <input type="text" class="form-control" id="phnumnber" name="phnumnber" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </section>
+                <section id="section3" style="padding-top: 15px;">
+                    <form  id="signupForm2">
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="ip-validation">
+                                        <input type="text" class="form-control" id="cname" name="cname" aria-describedby="emailHelp" placeholder="Company Name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="lname">Last Name</label>-->
+                                    <div class="ip-validation">
+                                        <input type="text" class="form-control" id="incharge" name="incharge" aria-describedby="incharge" placeholder="Are you in charge?">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="fname">First Name</label>-->
+                                    <div class="ip-validation">
+                                        <input type="number" class="form-control" id="empcount" aria-describedby="emailHelp" placeholder="Employee Count">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="lname">Last Name</label>-->
+                                    <div class="ip-validation">
+                                        <select class="form-control" id="payfreq">
+                                            <option>Pay Frequency</option>
+                                            <option>Weekly</option>
+                                            <option>Bi-Weekly</option>
+                                            <option>Semi Monthly</option>
+                                            <option>Monthly</option>
+                                        </select>
+                                        <!--<input type="text" class="form-control" id="payfreq" placeholder="Pay Frequency">-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="lname">Last Name</label>-->
+                                    <div class="ip-validation">
+                                        <select class="form-control" id="payroll">
+                                        </select>
+                                        <!--<input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </section>
+                <section id="section4" style="padding-top: 15px;">
+                    <form  id="signupForm3">
+
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="lname">Last Name</label>-->
+                                    <div class="row align-items-center">
+                                        <div class="col-8 checkox-label">
+                                            <label for="payrollprovider">Are you satisfied with your current Payroll service and their pricing?</label>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <span id="payrollprovider-lable" for="payrollprovider">No</span>
+                                            <label class="switch">
+                                                <input type="checkbox" id="payrollprovider">
+                                                <span class="slider"></span>
+                                            </label>
+                                        </div>
+                                        <!--<input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group" id="newsolution-group">
+                                    <!--<label for="lname">Last Name</label>-->
+                                    <div class="ip-validation">
+                                        <select class="form-control" id="newsolution">
+                                            <option>When would you like to start looking for new solution?</option>
+                                            <option>Now</option>
+                                            <option>30 days</option>
+                                            <option>60 days</option>
+                                            <option>90 days</option>
+                                            <option>6 months+</option>
+                                        </select>
+                                        <!--<input type="text" class="form-control" id="newsolution" placeholder="Now, 30 days, 60 days, 90 days, 6 months+">-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="row align-items-center">
+                                        <div class="col-8 checkox-label">
+                                            <label for="hremp">Do you have any hourly employees?</label>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <span id="hremp-lable" for="hremp">No</span>
+                                            <label class="switch">
+                                                <input type="checkbox" id="hremp">
+                                                <span class="slider"></span>
+                                            </label>
+                                        </div>
+                                        <!--<input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group" id="track-time-group">
+                                    <div class="ip-validation">
+                                        <select class="form-control" id="track-time">
+                                            <option>How do you track their time?</option>
+                                            <option>Paper Time Cards</option>
+                                            <option>Excel</option>
+                                            <option>Physical Time Clocks</option>
+                                        </select>
+                                        <!--<input type="text" class="form-control" id="track-time" placeholder="">-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="row align-items-center">
+                                        <div class="col-8 checkox-label">
+                                            <label for="healthins">Do you offer health insurance to your employees?</label>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <span id="healthins-lable" for="healthins">No</span>
+                                            <label class="switch">
+                                                <input type="checkbox" id="healthins">
+                                                <span class="slider"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group" id="empnum-group">
+                                    <!--<label for="empnum">How many employees do you have on the plan?</label>-->
+                                    <input type="text" class="form-control" id="empnum" placeholder="How many employees are on the plan?">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <!--<label for="monthlyspend">What is your monthly spend?</label>-->
+                                    <input type="text" class="form-control" id="monthlyspend" placeholder="What is your monthly spend?">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="row align-items-center">
+                                        <div class="col-8 checkox-label">
+                                            <label for="interested">Would you be interested in speaking with PayrollMart Benefits Advisor about ways to save money and time on your benefits costs / administration?</label>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <span id="interested-lable" for="interested">No</span>
+                                            <label class="switch">
+                                                <input type="checkbox" id="interested">
+                                                <span class="slider"></span>
+                                            </label>
+                                        </div>
+                                        <!--<input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </section>
+            </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-xs-6 col-sm-6 col-md-6" id="btnBackWarpper">
+                        <button type="button" value=" Next " id="btnBack" class="btn sbutton">Back</button>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 text-center" id="nxtBtnWarpper">
+                        <button type="button" value=" Next " id="btnNext" class="btn sbutton">Next</button>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 text-center" id="finishBtnWarpper">
+                        <button type="button" value="Finish" id="finish" class="btn sbutton">Finish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
