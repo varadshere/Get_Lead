@@ -53,6 +53,16 @@ $( document ).ready( function () {
     });
 
     $('#btnBack').click(function () {
+            $('[id^=section]').hide();
+            var prevSection = $('#'+currentSection).prev();
+            currentSection = $(prevSection).attr('id');
+            $(prevSection).show();
+            if(currentSection === 'section1'){
+                $('#nxtBtnWarpper').removeClass('text-right');
+                $('#nxtBtnWarpper').removeClass('text-left');
+                $('#nxtBtnWarpper').addClass('text-center');
+                $('#btnBackWarpper').hide();
+            }
 
     });
     $(".cube").on('click', function(event){

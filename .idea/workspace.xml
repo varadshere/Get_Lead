@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b50918f-f978-44d5-8750-eaa0578b41c7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/form/form.css" afterPath="$PROJECT_DIR$/form/form.css" />
       <change beforePath="$PROJECT_DIR$/form/form.js" afterPath="$PROJECT_DIR$/form/form.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,8 +45,8 @@
       <file leaf-file-name="form.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/form/form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3100">
-              <caret line="100" column="73" lean-forward="false" selection-start-line="100" selection-start-column="64" selection-end-line="100" selection-end-column="73" />
+            <state relative-caret-position="992">
+              <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -171,8 +169,8 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/index.css" />
         <option value="$PROJECT_DIR$/form/form.html" />
-        <option value="$PROJECT_DIR$/form/form.js" />
         <option value="$PROJECT_DIR$/form/form.css" />
+        <option value="$PROJECT_DIR$/form/form.js" />
       </list>
     </option>
   </component>
@@ -274,12 +272,12 @@
       <workItem from="1527799131558" duration="16504000" />
       <workItem from="1527890514212" duration="5889000" />
       <workItem from="1527954042245" duration="4966000" />
-      <workItem from="1527993167602" duration="1073000" />
+      <workItem from="1527993167602" duration="1617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87971000" />
+    <option name="totallyTimeSpent" value="88515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2182" height="1402" extended-state="6" />
@@ -313,7 +311,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -811,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/form/form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3100">
-          <caret line="100" column="73" lean-forward="false" selection-start-line="100" selection-start-column="64" selection-end-line="100" selection-end-column="73" />
+        <state relative-caret-position="992">
+          <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
           <folding />
         </state>
       </provider>
