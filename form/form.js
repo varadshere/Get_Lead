@@ -16,7 +16,15 @@ $( document ).ready( function () {
                 }
             });
             if(!selected){
+                $( ".cube" ).each(function( index ) {
+
+                    $(this).addClass('invalid-cube');
+                });
                 return;
+            }else {
+                $( ".cube" ).each(function( index ) {
+                    $(this).removeClass('invalid-cube');
+                });
             }
         }
         if($("#signupForm1").valid()){
@@ -49,6 +57,7 @@ $( document ).ready( function () {
     });
     $(".cube").on('click', function(event){
         $( ".cube" ).each(function( index ) {
+            $(this).removeClass('invalid-cube');
             $(this).children().children().first().removeClass('check-icon');
             $(this).children().children().first().addClass('uncheck-icon');
         });

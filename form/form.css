@@ -73,8 +73,24 @@ section{
     border-radius: 25px;
 }
 
+.invalid-cube{
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #FF5722;
+}
+
 .icon-customs{
     font-size: 70px;
+}
+
+.has-error{
+    background: #ff5b27;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 /*checkbox*/
 input[type=checkbox], input[type=radio] {
