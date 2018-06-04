@@ -74,7 +74,8 @@ $( document ).ready( function () {
         $(this).children().children().first().addClass('check-icon');
 
     });
-    var serverURL = 'http://18.188.167.167:5000/api/';
+    // var serverURL = 'http://18.188.167.167:5000/api/';
+    var serverURL = 'http://127.0.0.1:5000/api/';
     $( "#signupForm1" ).validate( {
         rules: {
             // cname: "required",
@@ -118,7 +119,7 @@ $( document ).ready( function () {
     $('#track-time-group').hide();
     $('#empnum-group').hide();
     $('#tell-us-bit').hide();
-    var currentPayroll = ['Current Payroll Provider', 'ADP', 'Ceridian', 'iSolved', 'Evolution', 'Paychex', 'Paycom', 'Paycor', 'Kronos', 'PEO', 'TriNet', 'Extensis', 'Oasis', 'Prestige', 'Quickbooks', 'Gusto', 'Ultimate', 'Zenefits', 'Process Payroll in House', 'New Business/ Need to Set Up', 'Other- not listed'];
+    var currentPayroll = ['Current Payroll Provider', 'New Business/ Need to Set Up', 'ADP', 'Ceridian', 'iSolved', 'Evolution', 'Paychex', 'Paycom', 'Paycor', 'Kronos', 'PEO', 'TriNet', 'Extensis', 'Oasis', 'Prestige', 'Quickbooks', 'Gusto', 'Ultimate', 'Zenefits', 'Process Payroll in House', 'Other- not listed'];
     var list = $("#payroll");
     $.each(currentPayroll, function(index, item) {
         list.append(new Option(item, item));

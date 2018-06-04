@@ -15,10 +15,10 @@ input[type="password"], input[type="number"]{
 }
 
 .form-control{
-    height: 57px !important;
+    height: 50px !important;
 }
 .form-group{
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 section{
     display:none;
