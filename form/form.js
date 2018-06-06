@@ -237,9 +237,9 @@ $( document ).ready( function () {
     function getCubeVal() {
         $( ".cube" ).each(function( index ) {
             if($(this).children().children().first().hasClass('check-icon')){
-                console.log($(this).children().children().last().text());
+                val = $(this).children().children().last().text();
             }
         });
-        return $(this).children().children().last().text()
+        return val;
     }
 });
