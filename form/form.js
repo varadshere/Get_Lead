@@ -84,7 +84,37 @@ $( document ).ready( function () {
             password: "required",
             email: {
                 required: true,
-                email: true
+                email: true,
+                remote: {
+                    url: serverURL + "checkUser",
+                    type: "post",
+                    contentType: "application/json; charset=utf-8",
+                    processData: false,
+                    dataType: "json",
+                    beforeSend: function(x, settings) {
+                        var data = {
+                            email: settings.data.email()
+                        };
+                        settings.data = JSON.stringify(data);
+
+                    },
+                    dataFilter: function(data) {
+                        // return JSON.stringify("test");
+                        data = JSON.parse(data);
+                        if(typeof data.result === "boolean"){
+                            if(!data.result){
+                                return true;
+                            }else {
+                                return JSON.stringify("This email is already taken");
+                            }
+                        }
+                    },
+                    data: {
+                        "email": function() {
+                            return  $("#email").val();
+                        }
+                    }
+                }
             },
             phnumnber: {
                 required: true,
@@ -217,17 +247,14 @@ $( document ).ready( function () {
                     "Access-Control-Allow-Methods": "POST, GET, OPTIONS, PUT"
                 }
             });
-            $.post(serverURL + "checkUser", JSON.stringify(checkUser), function(d, status){
-                if( typeof d.result === "boolean" && d.result === false){
-                    $.post(serverURL + "insert", JSON.stringify(dataToSend), function(data, status){
-                        if(data.result){
-
-                        }
-                    });
-                }else {
-
+            $.post(serverURL + "insert", JSON.stringify(dataToSend), function(data, status){
+                if(data.result){
+                    $('[id^=section]').hide();
+                    $('#dataInserted').show();
+                    $('#finishBtnWarpper').hide();
                 }
             });
+
 
 
         return false;
