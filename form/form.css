@@ -71,6 +71,12 @@ section{
     align-items: center;
     justify-content: center;
     border-radius: 25px;
+    border-color: chartreuse;
+}
+
+.cube:hover   {
+    box-shadow: -10px -10px 10px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin: 2px 0px 3px 3px;
 }
 
 .invalid-cube{
