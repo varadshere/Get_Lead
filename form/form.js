@@ -82,6 +82,7 @@ $( document ).ready( function () {
             fname: "required",
             lname: "required",
             password: "required",
+            // checky: "required",
             email: {
                 required: true,
                 email: true
@@ -96,7 +97,8 @@ $( document ).ready( function () {
             fname: "Please enter your firstname",
             lname: "Please enter your lastname",
             email: "Please enter a valid email address",
-            password: "Please enter a valid password"
+            password: "Please enter a valid password",
+            // checky: "Please select the checkbox",
         },
         errorElement: "em",
         errorPlacement: function ( error, element ) {
