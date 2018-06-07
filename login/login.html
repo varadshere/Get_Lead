@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <!--JS-->
+    <script src="lib/js/jquery.min.js"></script>
+    <!--<script src="../node_modules/popper.js"></script>-->
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="login.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Lead</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding-bottom: 25px;">
+            <img style="width: 180px;" src="lib/img/payroll_logo.png" onClick="window.location.href=window.location.href"> 
+    </nav>
+        
+    <div class="wrapper">
+        <div class="container-parent">
+            <div class="container">
+                <form>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <div class="ip-validation">
+                                    <input type="text" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="ip-validation">
+                                        <input type="password" class="form-control" id="password" name="password" aria-describedby="password" placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+                <div class="row justify-content-md-center">
+                    <div class="col-xs-6 col-sm-6 col-md-6 text-center" id="login-button-wrapper">
+                        <button style="font-size: 20px;" type="button" value="Login"
+                                    id="btnLogin" class="btn sbutton">Login</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+</body>

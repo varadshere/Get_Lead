@@ -1,0 +1,63 @@
+html, body{
+    height: 100%;
+    background: #223144;
+}
+
+
+.container-parent {
+    position: relative;
+    /* top: 50%; */
+    transform: translate(0, 90%)
+}
+
+input[type="text"], input[type="email"],
+input[type="password"], input[type="number"]{
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.form-control{
+    height: 50px !important;
+}
+.form-group{
+    padding-bottom: 10px;
+}
+
+.sbutton{
+    /*background-color: #84d08f !important;*/
+    /*border: #4cae4c !important;*/
+    background-color: #84d08f;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.has-error{
+    background: #ff5b27;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container-parent {
+        transform: translate(0, 50%)
+    }
+    .sbutton{
+        width: 100%;
+    }
+}
