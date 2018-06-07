@@ -1,4 +1,5 @@
 $( document ).ready( function () {
+    var $loading = $('.loader').hide();
     $('#finishBtnWarpper').hide();
     $('#section1').show();
     $('#btnBackWarpper').hide();
@@ -6,6 +7,7 @@ $( document ).ready( function () {
     // $('#nxtBtnWarpper').removeClass('text-left');
     var currentSection='section1';
     var lastSection = $('[id^=section]:last').attr('id');
+
     $('#btnNext').click(function(){
         if(currentSection === 'section1'){
             var selected = false;
@@ -249,8 +251,14 @@ $( document ).ready( function () {
                     "Access-Control-Allow-Methods": "POST, GET, OPTIONS, PUT"
                 }
             });
+            $loading.show();
+            $('.sec4-inner-warapper').hide();
+            $('#finish').hide();
+
             $.post(serverURL + "insert", JSON.stringify(dataToSend), function(data, status){
                 if(data.result){
+                    $loading.hide();
+                    $('.sec4-inner-warapper').show();
                     $('[id^=section]').hide();
                     $('#dataInserted').show();
                     $('#finishBtnWarpper').hide();
