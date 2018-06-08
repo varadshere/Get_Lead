@@ -44,6 +44,8 @@ input[type="password"], input[type="number"]{
     border-bottom-left-radius: 10px;
     padding-left: 5px;
     padding-right: 5px;
+    color: white;
+    font-weight: bold;
 }
 
 @media screen
