@@ -1,6 +1,7 @@
 $( document ).ready( function () {
     $.getScript('../config/config.js', function() {
-
+        $('#profile-section').hide();
+        var $loading = $('.loader').hide();
         var currentPayroll = ['Current Payroll Provider', 'New Business/ Need to Set Up', 'ADP', 'Ceridian', 'iSolved', 'Evolution', 'Paychex', 'Paycom', 'Paycor', 'Kronos', 'PEO', 'TriNet', 'Extensis', 'Oasis', 'Prestige', 'Quickbooks', 'Gusto', 'Ultimate', 'Zenefits', 'Process Payroll in House', 'Other- not listed'];
         var list = $("#payroll");
         $.each(currentPayroll, function(index, item) {
@@ -38,6 +39,12 @@ $( document ).ready( function () {
         } );
     
         $('#btnLogin').click(function(e) {
+            if($("#login-form").valid()){
+                console.log('valid form 1')
+            }else {
+                console.log('invalid form 2')
+                return;
+            }
             $.ajaxSetup({
                 headers:{
                     "Accept": "application/json, text/plain, */*",
@@ -49,12 +56,20 @@ $( document ).ready( function () {
             var dataToSend = {
                 "email": $('#email').val(),
                 "password": $('#password').val()
-            }
-
+            };
+            $('#login-section').hide();
+            $loading.show();
             $.post(config.serverURL + "login", JSON.stringify(dataToSend), function(data, status){
                 if(data.result){
+                    $loading.hide();
                     $('#login-section').hide();
+                    $('#profile-section').show();
+
                 }
+            }).fail(function(error) {
+                $('#login-section').show();
+                $loading.hide();
+                // alert(error.responseJSON)
             });
 
             

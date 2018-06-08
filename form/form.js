@@ -264,10 +264,9 @@ $( document ).ready( function () {
                         $('#dataInserted').show();
                         $('#finishBtnWarpper').hide();
                     }
+                }).fail(function(error) {
+                    $loading.hide();
                 });
-
-
-
             return false;
         });
 
