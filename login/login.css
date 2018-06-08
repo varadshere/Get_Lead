@@ -5,6 +5,7 @@ html, body{
 
 
 .container-parent {
+    display: none;
     position: relative;
     /* top: 50%; */
     transform: translate(0, 90%)
@@ -46,6 +47,11 @@ input[type="password"], input[type="number"]{
     padding-right: 5px;
     color: white;
     font-weight: bold;
+}
+
+.form-group label{
+    color: white;
+    font-weight: 500;
 }
 
 @media screen

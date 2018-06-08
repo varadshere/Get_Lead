@@ -1,5 +1,12 @@
 $( document ).ready( function () {
     $.getScript('../config/config.js', function() {
+
+        var currentPayroll = ['Current Payroll Provider', 'New Business/ Need to Set Up', 'ADP', 'Ceridian', 'iSolved', 'Evolution', 'Paychex', 'Paycom', 'Paycor', 'Kronos', 'PEO', 'TriNet', 'Extensis', 'Oasis', 'Prestige', 'Quickbooks', 'Gusto', 'Ultimate', 'Zenefits', 'Process Payroll in House', 'Other- not listed'];
+        var list = $("#payroll");
+        $.each(currentPayroll, function(index, item) {
+            list.append(new Option(item, item));
+        });
+
         $( "#login-form" ).validate( {
             rules: {
                 password: "required",

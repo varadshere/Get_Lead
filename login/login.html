@@ -55,7 +55,152 @@
             </div>
         </section>
         <section id="profile-section">
-                    
+            <div class="container">
+                <form id="profile-form">
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="fname">First Name</label>
+                                <div class="ip-validation">
+                                    <input type="text" class="form-control" id="fname" name="fname" aria-describedby="emailHelp" placeholder="First Name">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="lname">Last Name</label>
+                                <div class="ip-validation">
+                                    <input type="text" class="form-control" id="lname" name="lname" aria-describedby="emailHelp" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="p-email">Email</label>
+                                <div class="ip-validation">
+                                    <input type="text" class="form-control" id="p-email" name="email" aria-describedby="email" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="phnumnber">Phone</label>
+                                <div class="ip-validation">
+                                    <input type="text" class="form-control" id="phnumnber" name="phnumnber" placeholder="Phone Number">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="cname">Company Name</label>
+                                <div class="ip-validation">
+                                    <input type="text" class="form-control" id="cname" name="cname" aria-describedby="emailHelp" placeholder="Company Name">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="incharge">Are you the decision maker?</label>
+                                <div class="ip-validation">
+                                    <!--<input type="text" class="form-control" id="incharge" name="incharge" aria-describedby="incharge" placeholder="Are you in charge?">-->
+                                    <select class="form-control" id="incharge" name="incharge"
+                                            style="font-size: 22px; padding-left: 20px;">
+                                        <option style="color: #838a91;">Are you the decision maker?</option>
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="empcount">Employee Count</label>
+                                <div class="ip-validation">
+                                    <input type="number" class="form-control" id="empcount" aria-describedby="emailHelp" placeholder="Employee Count" min="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="payfreq">Pay Frequency</label>
+                                <div class="ip-validation">
+                                    <select class="form-control" id="payfreq" style="font-size: 22px;
+                                             padding-left: 20px;">
+                                        <option style="color: #838a91;">Pay Frequency</option>
+                                        <option>Weekly</option>
+                                        <option>Bi-Weekly</option>
+                                        <option>Semi Monthly</option>
+                                        <option>Monthly</option>
+                                    </select>
+                                    <!--<input type="text" class="form-control" id="payfreq" placeholder="Pay Frequency">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <label for="payroll">Payroll Provider</label>
+                                <div class="ip-validation">
+                                    <select class="form-control" id="payroll"  style="font-size: 22px;
+                                             padding-left: 20px;">>
+                                    </select>
+                                    <!--<input type="text" class="form-control" id="payroll" placeholder="Payroll Provider">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group" id="newsolution-group">
+                                <label for="lname">When would you like to start looking for new solution?</label>
+                                <div class="ip-validation">
+                                    <select class="form-control" id="newsolution" style="font-size: 19px;
+                                                 padding-left: 5px;">
+                                        <!--<option style="color: #838a91;">-->
+                                        <!--When would you like to start looking for new solution?</option>-->
+                                        <option>Now</option>
+                                        <option>30 days</option>
+                                        <option>60 days</option>
+                                        <option>90 days</option>
+                                        <option>6 months+</option>
+                                    </select>
+                                    <!--<input type="text" class="form-control" id="newsolution" placeholder="Now, 30 days, 60 days, 90 days, 6 months+">-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="row justify-content-md-center">-->
+                        <!--<div class="col-xs-6 col-sm-6 col-md-6">-->
+                            <!--<div class="form-group">-->
+                                <!--<div class="ip-validation">-->
+                                    <!--<input type="text" class="form-control" id="p-password" name="password" aria-describedby="password" placeholder="Password">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </form>
+                <div class="row justify-content-md-center">
+                    <div class="col-xs-6 col-sm-6 col-md-6 text-center" id="login-button-wrapper">
+                        <button style="font-size: 20px;" type="button" value="Login"
+                                id="btnLogin" class="btn sbutton">Login</button>
+                    </div>
+                </div>
+            </div>
         </section>  
     </div>
 </body>

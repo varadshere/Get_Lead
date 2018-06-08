@@ -77,7 +77,7 @@ $( document ).ready( function () {
             $(this).children().children().first().addClass('check-icon');
 
         });
-        config.serverURL = 'http://18.188.167.167:5000/api/';
+        // config.serverURL = 'http://18.188.167.167:5000/api/';
         // var serverURL = 'http://127.0.0.1:5000/api/';
         $( "#signupForm1" ).validate( {
             rules: {
